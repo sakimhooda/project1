@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	margin:auto;
+	background-color:#008080;
+	width:1200;
+	
+	
+	
+}
+header{
+	
+	background-color:blue;
+	text-align:center;
+	color:black;
+	font-size:45px;
+	font-style:bold;
+}
+
+.navigation{
+	
+	width:1200;
+	height:35;
+	font-size:30;
+	background-color:#339933;
+	border-color:black;
+	border-style:solid;
+	border-width:1;
+	
+	}
+
+.navigation ul{
+	
+	list-style-type:none;
+	display:inline;
+	
+	
+}
+.navigation ul li{
+	width:180;
+	padding:2;
+	text-align:center;
+	float:left;
+			
+}
+.navigation ul li a{
+	display:block;
+	text-decoration:none;
+	color:#9fc;
+	
+}
+.navigation ul li  a:hover{
+	
+	background-color:#567;
+	color:#fff;
+	
+}
+.sidebar{
+	padding:2px;
+	background-color:#00cc00;
+	
+	width:296;
+	float:left;
+}
+.sidebar h1{
+	background-color:pink;text-align:center;
+	
+}
+.sidebar ul{
+	list-style-type:none;
+	display:vertical-align;
+	
+	
+}
+.sidebar ul li a{
+	text-decoration:none;
+	border:1px solid black;
+	display: block;
+	text-align:center;
+	background-color:#567;
+	height:40;
+	
+	color:#9fc;
+	
+}
+.sidebar ul li a:hover{
+	background-color:#008080;
+	color:blues;
+	
+}
+.mainbody{
+	background-color:#008080;
+	
+	width:900;
+	float:right;
+	
+}
+
+
+
+
+
+
+
+.form{
+padding:20;
+
+float:center;
+
+
+}
+.form p{
+	float:center;
+}

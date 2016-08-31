@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title> intercpy</title>
+	{% load staticfiles %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'intercpy/style.css' %}" />
+	
+</head>
+<body >
+<div class="main_wrapper">
+	<header><h1> intern copy </h1>
+     </header>
+	 <div class="navigation">
+	 <nav><ul>
+	 
+	 
+	           <li><a href="home">HOME</a></li>
+			   <li><a href="news">NEWS</a></li>
+			   <li><a href="about">ABOUT</a></li>
+			   <li><a href="contacts">CONTACTS</a></li>
+			  {%if name%}
+			  <li> <a href="setting">welcom {{name}}<a/></li>
+			  <li> <a href="logout">logout</a></li>
+			  {%endif%}
+			</ul>
+	 </nav>
+	 </div>
+	 <section class="mainbody">
+	 
+	 <h1>{{d.companyname}}</h1>
+	 <h2>{{d.internarea}}</h2>
+	 <h4>{{d.interntype}}   <strong>posted on :</strong>{{d.postd}}    <strong>last date :</strong> {{d.lastd}}  <strong>early staring date :</strong> {{d.Estartd}}  </h4>
+	 <h4>  <strong> time peroid :</strong>{{d.timeperiod}} months</h4>
+	 <p><h3> about company</h3>[{{d.abotcom}}</p>
+	 <p><h3> about internship</h3>{{d.abotintern}}</p>
+	
+	
+	 
+	 </section>
+	 
+	 
+	 <aside class="sidebar">
+	  <h1> Internship Type</h1>
+	 <ul>
+	 {%for t in type%}
+	 <li><a href="http://127.0.0.1:8000/type/{{t.id}}/">{{t}}</a></li>
+	 {%endfor%}
+	 </ul>
+	 <h1> Internship Area</h1>
+	 <ul>
+	 {%for t in internin%}
+	 <li><a href="http://127.0.0.1:8000/internin/{{t.id}}/">{{t}}</a></li>
+	 {%endfor%}
+	 </ul>
+	 </aside>
+	 
+	 <footer class="foot">
+      </footer>
+</div>
+
+</body>
+</html>

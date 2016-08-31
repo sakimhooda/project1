@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> intercpy</title>
+	{% load staticfiles %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'intercpy/style.css' %}" />
+	
+</head>
+<body >
+<div class="main_wrapper">
+	<header><h1> intern copy </h1>
+     </header>
+	 
+	 <div class="form">
+	 <form action="http://127.0.0.1:8000/register/" method="post" align="center"> 
+	 {%csrf_token%}
+	 
+	 {{f1.as_p}}
+	
+	 <input type="submit" value="register"><br>
+	 {%if msg%}
+	 {{msg}}
+	 {%endif%}
+	 
+	 </form>
+	 
+	 </div>
+	 <footer class="foot">
+      </footer>
+</div>
+
+</body>
+</html>
